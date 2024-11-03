@@ -68,17 +68,16 @@ public class Main {
         byte milkGrams = 105;
         int milk1 = milk * milkGrams;
         System.out.println(milk1);
-        byte plombir = 2;
-        byte plombirGrams = 100;
-        int plombir1 = plombir * plombirGrams;
-        System.out.println(plombir1);
+        byte aceCream = 2;
+        byte aceCreamGrams = 100;
+        int aceCream1 = aceCream * aceCreamGrams;
+        System.out.println(aceCream1);
         byte agg = 4;
         byte aggGrams = 70;
         int agg1 = agg * aggGrams;
         System.out.println(agg1);
-        int breakFast = bananas1 + milk1 + plombir1 + agg1;
+        int breakFast = bananas1 + milk1 + aceCream1 + agg1;
         System.out.println("Завтрак спортсмена имеет " + breakFast + " грамм веса");
-        int kg = 1000;
         float breakFast1 = breakFast / 1000f;
         System.out.println("Завтрак спортсмена имеет " + breakFast1 + " грамм веса");
 
@@ -107,8 +106,6 @@ public class Main {
         System.out.println("Годовой доход до надбавки " + mashaYeah1 + " рублей");
         int mashaYeah2 = masha2 * monthOfYeah;
         System.out.println("Годовой доход после надбавки " + mashaYeah2 + " рублей");
-        int masha3 = mashaYeah2 - mashaYeah1;
-        System.out.println(masha3);
         System.out.println("Маша теперь получает " + mashaYeah2 + " рублей.Годовой доход вырос на " + masha2 + " рублей");
 
         int denis1 = denis / yeah;
@@ -119,7 +116,6 @@ public class Main {
         System.out.println("Годовой доход до надбавки " + denisYeah1 + " рублей");
         int denisYeah2 = denis2 * monthOfYeah;
         System.out.println("Годовой доход после надбавки " + denisYeah2 + " рублей");
-        int denis3 = denisYeah2 - denisYeah1;
         System.out.println("Денис теперь получает " + denisYeah2 + " рублей.Годовой доход вырос на " + denis2 + " рублей");
 
         int kristina1 = kristina / yeah;
@@ -130,7 +126,6 @@ public class Main {
         System.out.println("Годовой доход до надбавки " + kristinaYeah1 + " рублей");
         int kristinaYeah2 = kristina2 * monthOfYeah;
         System.out.println("Годовой доход после надбавки " + kristinaYeah2 + " рублей");
-        int kristina3 = kristinaYeah2 - kristinaYeah1;
         System.out.println("Кристина теперь получает " + kristinaYeah2 + " рублей.Годовой доход вырос на " + kristina2 + " рублей");
 
 
