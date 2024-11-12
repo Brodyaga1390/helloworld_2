@@ -2,39 +2,54 @@ import org.w3c.dom.ls.LSOutput;
 
 public class Main {
     public static void main(String[] args) {
+        //Задача№1
+        int a1 = 1;
+        System.out.println("Значение переменной a1 с типом int равно " + a1);
+        byte b2 = 2;
+        System.out.println("Значение переменной b2 с типом byte равно " + b2);
+        short c3 = 3;
+        System.out.println("Значение переменной c3 с типом short равно " + c3);
+        long d4 = 4;
+        System.out.println("Значение переменной d4 с типом long равно " + d4);
+        float e5 = 5;
+        System.out.println("Значение переменной e5 с типом float равно " + e5);
+        double g1 = 6;
+        System.out.println("Значение переменной g1 с типом double равно " + g1);
+
         //Задача№2
-        byte a = 67;
+        float a = 21.12f;
         System.out.println(a);
-        short b = -159;
+        long b = 987_678_965_549L;
         System.out.println(b);
-        int c = 27897;
+        double c = 2.786;
         System.out.println(c);
-        int z = 569;
-        System.out.println(z);
-        long d = 987679965549L;
+        short d = 569;
         System.out.println(d);
-        float e = 27.122f;
+        short e = -159;
         System.out.println(e);
-        double x = 2.786;
+        int x = 27897;
         System.out.println(x);
-//Задача№3
+        byte y = 67;
+        System.out.println(y);
+
+        //Задача№3
         byte lp = 23;
         byte fs = 27;
         byte ea = 30;
         short always = 480;
         int lpFsEa = lp + fs + ea;
         System.out.println(lpFsEa);
-        int bd = always / lpFsEa;
+        double bd = always / lpFsEa;
         System.out.println(bd);
         System.out.println("На каждого ученика рассчитано " + bd + " листов бумаги");
 
         //Задача№4
         //Месяц взял 31 день!
-        byte lm = 8;
+        int lm = 8;
         System.out.println("Производительность в 1 минуту " + lm + " бутылок");
-        byte m = 20;
-        short s = 1440;
-        short ts = 4320;
+        int m = 20;
+        int s = 1440;
+        int ts = 4320;
         int mes = 44640;
         int m1 = m * lm;
         System.out.println("За " + m + " минут машина произвела " + m1 + " бутылок");
@@ -51,29 +66,29 @@ public class Main {
         byte kor = 4;
         int kr = bel + kor;
         System.out.println("На один класс уходит " + kr + " банок краски");
-        int clas1 = clas / kr;
+        double clas1 = clas / kr;
         System.out.println("В школе " + clas1 + " классов");
-        int bel1 = bel * clas1;
+        double bel1 = bel * clas1;
         System.out.println(bel1);
-        int kor1 = kor * clas1;
+        double kor1 = kor * clas1;
         System.out.println(kor1);
         System.out.println("В школе, где " + clas1 + " классов, нужно " + bel1 + " банок белой краски и " + kor1 + " банок коричневой краски");
 
         //Задача№6
-        byte bananas = 5;
-        byte bananasGrams = 80;
+        int bananas = 5;
+        int bananasGrams = 80;
         int bananas1 = bananas * bananasGrams;
         System.out.println(bananas1);
-        short milk = 2;
-        byte milkGrams = 105;
+        int milk = 2;
+        int milkGrams = 105;
         int milk1 = milk * milkGrams;
         System.out.println(milk1);
-        byte aceCream = 2;
-        byte aceCreamGrams = 100;
+        int aceCream = 2;
+        int aceCreamGrams = 100;
         int aceCream1 = aceCream * aceCreamGrams;
         System.out.println(aceCream1);
-        byte agg = 4;
-        byte aggGrams = 70;
+        int agg = 4;
+        int aggGrams = 70;
         int agg1 = agg * aggGrams;
         System.out.println(agg1);
         int breakFast = bananas1 + milk1 + aceCream1 + agg1;
@@ -84,47 +99,49 @@ public class Main {
         //Задача№7
         short day1 = 250;
         short day2 = 500;
-        byte kgg = 7;
-        int kg1 = kgg * 1000;
-        System.out.println(kg1);
-        int day1Kg = kg1 / day1;
+        int kgg = 7000;
+
+
+        int day1Kg = kgg / day1;
         System.out.println("При " + day1 + " грамм в день " + day1Kg + " дней понадобится для похудения");
-        int day2Kg = kg1 / day2;
+        int day2Kg = kgg / day2;
         System.out.println("При " + day2 + " грамм в день " + day2Kg + " дней понадобится для похудения");
+        float daysAverage = (day1Kg + day2Kg) / 2f;
+        System.out.println("Среднее число дней:" + daysAverage);
 
         //Задача№8
         int masha = 67760;
         int denis = 83690;
         int kristina = 76230;
-        byte yeah = 10;
-        int masha1 = masha / yeah;
+        int yeah = 10;
+        double masha1 = masha / yeah;
         System.out.println(masha1);
-        int masha2 = masha + masha1;
+        double masha2 = masha + masha1;
         System.out.println(masha2);
-        byte monthOfYeah = 12;
+        int monthOfYeah = 12;
         int mashaYeah1 = masha * monthOfYeah;
         System.out.println("Годовой доход до надбавки " + mashaYeah1 + " рублей");
-        int mashaYeah2 = masha2 * monthOfYeah;
+        double mashaYeah2 = masha2 * monthOfYeah;
         System.out.println("Годовой доход после надбавки " + mashaYeah2 + " рублей");
         System.out.println("Маша теперь получает " + mashaYeah2 + " рублей.Годовой доход вырос на " + masha2 + " рублей");
 
-        int denis1 = denis / yeah;
+        double denis1 = denis / yeah;
         System.out.println(denis1);
-        int denis2 = denis1 + denis;
+        double denis2 = denis1 + denis;
         System.out.println(denis2);
         int denisYeah1 = denis * monthOfYeah;
         System.out.println("Годовой доход до надбавки " + denisYeah1 + " рублей");
-        int denisYeah2 = denis2 * monthOfYeah;
+        double denisYeah2 = denis2 * monthOfYeah;
         System.out.println("Годовой доход после надбавки " + denisYeah2 + " рублей");
         System.out.println("Денис теперь получает " + denisYeah2 + " рублей.Годовой доход вырос на " + denis2 + " рублей");
 
-        int kristina1 = kristina / yeah;
+        double kristina1 = kristina / yeah;
         System.out.println(kristina1);
-        int kristina2 = kristina1 + kristina;
+        double kristina2 = kristina1 + kristina;
         System.out.println(kristina2);
         int kristinaYeah1 = kristina * monthOfYeah;
         System.out.println("Годовой доход до надбавки " + kristinaYeah1 + " рублей");
-        int kristinaYeah2 = kristina2 * monthOfYeah;
+        double kristinaYeah2 = kristina2 * monthOfYeah;
         System.out.println("Годовой доход после надбавки " + kristinaYeah2 + " рублей");
         System.out.println("Кристина теперь получает " + kristinaYeah2 + " рублей.Годовой доход вырос на " + kristina2 + " рублей");
 
